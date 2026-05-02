@@ -282,6 +282,17 @@ body.c-click #rd-cursor-dot {
   color: var(--text-1);
   flex-shrink: 0;
 }
+.nav-logo-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  filter: drop-shadow(0 0 12px rgba(56, 189, 248, 0.3));
+  transition: transform var(--t-fast), filter var(--t-fast);
+}
+.nav-logo:hover .nav-logo-icon {
+  transform: rotate(-5deg) scale(1.08);
+  filter: drop-shadow(0 0 18px rgba(56, 189, 248, 0.48));
+}
 .nav-logo strong {
   background: var(--grad-primary);
   -webkit-background-clip: text;
@@ -1326,7 +1337,7 @@ body.loaded .fade-up { animation-play-state: running; }
   .navbar { border-bottom-width: 1px; }
   .nav-inner { height: 60px; padding-inline: 1.25rem; }
   .nav-logo { font-size: 1.1rem; }
-  .nav-logo svg { width: 28px; height: 28px; }
+  .nav-logo-icon { width: 34px; height: 34px; }
   
   /* Hero */
   .hero-section { 
@@ -1478,7 +1489,7 @@ body.loaded .fade-up { animation-play-state: running; }
   /* Navigation */
   .nav-inner { height: 56px; padding-inline: 1rem; }
   .nav-logo { font-size: 1rem; }
-  .nav-logo svg { width: 24px; height: 24px; }
+  .nav-logo-icon { width: 30px; height: 30px; }
   
   /* Hero */
   .hero-section { 
